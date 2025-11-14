@@ -6,8 +6,8 @@ from datetime import datetime, timedelta
 # Output should include book ID, title, and author
 #Challenge level 1 psuedo code:
 # Print all books that have "available" = true with book id, author, and title. (loop through list using for loop?)
-#-------   Old Code  --------
 '''
+-------   Old Code  --------
 def printBooks():
         for book in library_books:
             if book["available"]:
@@ -21,8 +21,8 @@ def printBooks():
 # Return a list of matching books
 #Challenge level 2 psuedo code:
 # get input from user about author and genre, print all books with that author or genre
-# -------- Old Code -------
 '''
+-------   Old Code  --------
 def searchBooks():
     author = str.lower(input("what author are you looking for? "))
     genre = str.lower(input("What genre are you looking for? "))
@@ -44,8 +44,8 @@ def searchBooks():
 # Challenge level 3 psuedo code:
 # Create a function to checkout a book by ID - If the book is available, set the key to unavailable, set datetime to 2 weeks from today, 
 # increment the checkouts counter, if the book is not available print message saying it is already checked out.
-# -------- Old Code -------
 '''
+-------   Old Code  --------
 def checkout():
     bookCheck = input("Enter book ID: ")
     for book in library_books:
@@ -63,6 +63,7 @@ def checkout():
 # Challenge level 4 psuedo code:
 # Get book ID from user, set its availability to true and clear the due_date
 '''
+-------   Old Code  --------
 def returnBook():
     bookId = input("Enter book ID: ")
     for book in library_books:
@@ -74,6 +75,7 @@ def returnBook():
 # A book is overdue if its due_date is before today AND it is still checked out
 # Write another functions to list all overdue books (due_date before today + still checked out)
 '''
+-------   Old Code  --------
 def listOverdueBooks():
     for book in library_books:
         if book["available"] == False:
